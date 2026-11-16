@@ -10,6 +10,6 @@ foot
 Libertinus Mono font
 Xanh Mono font
 
-config.lua goes to "/home/$user/.config/swindle/config.lua/"
-foot.ini to "/home/$user/.config/foot/foot.ini/"
+config.lua goes to "/home/$user/.config/swindle/"
+foot.ini to "/home/$user/.config/foot/"
 style.css and config.jsonc to "/home/$user/.config/waybar/"
