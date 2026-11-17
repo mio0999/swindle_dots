@@ -57,7 +57,7 @@ autostart = {
     "wireplumber",
     "pipewire-pulse",
     "waybar",
-    "swaybg -i ~/mios_wallpapers/mountain01.png -m stretch",
+    "swaybg -i ~/swindle_dots/mountain-darkblue/wallpapers/mountains/mountain01.png -m stretch",
 }
 
 -- keybinds

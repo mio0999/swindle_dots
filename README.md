@@ -1,21 +1,36 @@
 # swindle_dots
 dot files for swindle
 
-depencies:
+Depencies:
 swindle
-swaybg
 waybar
 wofi
 foot
+swaybg
+grim
+pipewire
+wireplumber
+pipewire pulse
+dbus
+dbus-openrc
+xwayland
+brightnessctl
+fontconfig
 Libertinus Mono font
 Xanh Mono font
-pipewire
-pipewire-pulse
-wireplumber
-brightnessctl
 
-config.lua goes to "/home/$user/.config/swindle/"
-foot.ini to "/home/$user/.config/foot/"
-style.css and config.jsonc to "/home/$user/.config/waybar/"
+Instructions:
+clone the repo with:
+  git clone https://github.com/mio0999/swindle-dots
 
-launch with "dbus-run session swindle" or just add this line to /home/$user/.profile
+find the dots you want for example mountain-darkblue
+you can check how each dots looks in the showcase folder
+
+then move files from foot folder to /home/$USER/.config/foot/
+from swindle folder to /home/$USER/.config/swindle/
+from waybar folder to /home/$USER/.config/waybar
+from wofi folder to /home/$USER/.config/wofi
+
+start swindle like this "dbus-run-session swindle"
+
+and you should be done
