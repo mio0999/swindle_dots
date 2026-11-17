@@ -30,6 +30,7 @@ then move files from foot folder to /home/$USER/.config/foot/
 from swindle folder to /home/$USER/.config/swindle/
 from waybar folder to /home/$USER/.config/waybar
 from wofi folder to /home/$USER/.config/wofi
+also you can add fastfetch config.jsonc to /home/$USER/.config/fastfetch/
 
 start swindle like this "dbus-run-session swindle"
 
