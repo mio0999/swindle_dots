@@ -34,3 +34,5 @@ from wofi folder to /home/$USER/.config/wofi
 start swindle like this "dbus-run-session swindle"
 
 and you should be done
+
+to change wallpaper simply change the swaybg directory in config.lua in austart section
