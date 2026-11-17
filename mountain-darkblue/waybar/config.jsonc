@@ -20,7 +20,10 @@
     "clock#time": { "format": "{:%H:%M:%S}", "interval": 1 },
 
     // system
-    "memory":     { "format": "RAM {percentage}%" },
+    "memory":     {            
+        "format": "RAM {percentage}%", 
+        "interval": 2
+    },
     "pulseaudio": { "format": "VOL {volume}%", "format-muted": "VOL mute" },
     "backlight":  { "format": "BRI {percent}%" },
     "battery": {
@@ -28,7 +31,8 @@
         "format-discharging": "BAT {capacity}%",
         "format-charging": "BAT {capacity}%+",
         "format-full": "BAT {capacity}%",
-        "format-plugged": "BAT {capacity}%"
+        "format-plugged": "BAT {capacity}%",
+        "interval": 5
     },
 
     // separators
