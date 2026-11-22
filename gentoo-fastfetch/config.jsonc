@@ -1,0 +1,44 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "source": "gentoo",
+    "color": {
+      "1": "1;38;2;255;255;255",
+      "2": "1;38;2;255;255;255"
+    },
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 3
+    }
+  },
+  "display": {
+    "separator": " -> ",
+    "color": {
+      "keys": "1;38;2;185;170;216",
+      "title": "1;38;2;185;170;216",
+      "separator": "1;38;2;185;170;216",
+      "output": "1;38;2;255;255;255"
+    },
+    "key": {
+      "width": 0
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    { "type": "os", "key": "OS" },
+    { "type": "host", "key": "Host" },
+    { "type": "kernel", "key": "Kernel" },
+    { "type": "packages", "key": "Packages" },
+    { "type": "wm", "key": "WM" },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 0
+    },
+    "break"
+  ]
+}

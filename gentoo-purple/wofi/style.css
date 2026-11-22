@@ -1,0 +1,58 @@
+window {
+    background-color: rgba(74, 63, 114, 0.9);
+    border: 1px solid #ffffff;
+    font-family: "Xanh Mono";
+    font-size: 13px;
+}
+
+#outer-box {
+    padding: 8px;
+}
+
+#input {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    min-height: 0;
+    padding: 2px 4px;
+    margin-bottom: 6px;
+}
+
+#input image {
+    color: #ffffff;
+    -gtk-icon-style: symbolic;
+    opacity: 1;
+    min-width: 0;
+    min-height: 0;
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+
+#inner-box, #scroll {
+    background: transparent;
+}
+
+#entry {
+    padding: 3px 6px;
+    border: 1px solid transparent;
+}
+
+#text {
+    color: #ffffff;
+}
+
+#entry:selected {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    outline: none;
+}
+
+#entry:selected #text {
+    color: #ffffff;
+    font-weight: normal;
+}
