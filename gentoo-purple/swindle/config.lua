@@ -53,8 +53,8 @@ monitors = {
 -- autostart
 autostart = {
     "dbus-update-activation-environment WAYLAND_DISPLAY XDG_SESSION_TYPE XDG_CURRENT_DESKTOP",
-    [[sh -c 'pkill -x waybar; pkill -x swaybg; pkill -x pipewire-pulse; pkill -x wireplumber; pkill -x pipewire; sleep 1; pipewire & wireplumber & pipewire-pulse & sleep 2; waybar & swaybg -i ~/mios_wallpapers/purplepainting.jpg -m stretch &']],
-    [[sh -c 'sleep 2; o=$(wlr-randr | awk "/^HDMI/{print \$1;exit}"); [ -n "$o" ] && wlr-randr --output "$o" --on --mode 1920x1080@120Hz --pos 0,0 --output eDP-1 --off']],
+    [[sh -c '[ -e "$XDG_RUNTIME_DIR/autostart-done" ] && exit 0; touch "$XDG_RUNTIME_DIR/autostart-done"; pkill -x waybar; pkill -x swaybg; pkill -x pipewire-pulse; pkill -x wireplumber; pkill -x pipewire; sleep 1; pipewire & wireplumber & pipewire-pulse & sleep 2; waybar & swaybg -i ~/mios_wallpapers/purplepainting.jpg -m stretch &']],
+    [[sh -c '[ -e "$XDG_RUNTIME_DIR/monitor-done" ] && exit 0; touch "$XDG_RUNTIME_DIR/monitor-done"; sleep 2; o=$(wlr-randr | awk "/^HDMI/{print \$1;exit}"); [ -n "$o" ] && wlr-randr --output "$o" --on --mode 1920x1080@120Hz --pos 0,0 --output eDP-1 --off']],
 }
 
 -- keybinds
