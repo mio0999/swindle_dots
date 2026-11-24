@@ -25,9 +25,10 @@
     { "type": "host", "key": "Host" },
     { "type": "kernel", "key": "Kernel" },
     { "type": "packages", "key": "Packages" },
-    { "type": "wm", "key": "WM" },
-    { "type": "disk", "key": "Disk", "folders": "/" },
+    { "type": "wm", "key": "WM" }, 
+    { "type": "cpu", "key": "CPU" },
     { "type": "memory", "key": "Memory" },
+    { "type": "disk", "key": "Disk", "folders": "/" },
     "break",
     {
       "type": "colors",
