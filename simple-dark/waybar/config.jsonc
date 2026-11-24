@@ -1,0 +1,59 @@
+{
+    // bar
+    "layer": "top",
+    "position": "bottom",
+    "height": 26,
+    "margin-left": 150,
+    "margin-right": 1300,
+    "margin-bottom": 3,
+
+    // layout
+    "modules-left": ["custom/user", "custom/sep7", "dwl/tags", "custom/sep1", "clock#date", "custom/sep2"],
+    "modules-center": ["clock#time"],
+    "modules-right": ["custom/sep3", "cpu", "custom/sep6", "memory", "custom/sep4", "pulseaudio", "custom/sep5", "battery"],
+
+    // user (click = poweroff)
+    "custom/user": {
+        "exec": "whoami",
+        "interval": "once",
+        "format": " {} ",
+        "tooltip": false,
+        "on-click": "doas poweroff"
+    },
+
+    // tags
+    "dwl/tags": { "num-tags": 9 },
+
+    // clock
+    "clock#date": { "format": "{:%m/%d/%Y}" },
+    "clock#time": { "format": "{:%H:%M:%S}", "interval": 1 },
+
+    // system
+    "cpu": {
+        "format": " CPU {usage}% ",
+        "interval": 1
+    },
+    "memory": {
+        "format": "RAM {percentage}%",
+        "interval": 2
+    },
+    "pulseaudio": { "format": "VOL {volume}%", "format-muted": "VOL mute" },
+    "backlight":  { "format": "BRI {percent}%" },
+    "battery": {
+        "format": "BAT {capacity}%",
+        "format-discharging": "BAT {capacity}%",
+        "format-charging": "BAT {capacity}%+",
+        "format-full": "BAT {capacity}%",
+        "format-plugged": "BAT {capacity}%",
+        "interval": 5
+    },
+
+    // separators
+    "custom/sep1": { "format": "|", "tooltip": false },
+    "custom/sep2": { "format": "|", "tooltip": false },
+    "custom/sep3": { "format": "|", "tooltip": false },
+    "custom/sep4": { "format": "|", "tooltip": false },
+    "custom/sep5": { "format": "|", "tooltip": false },
+    "custom/sep6": { "format": "|", "tooltip": false },
+    "custom/sep7": { "format": "|", "tooltip": false }
+}
