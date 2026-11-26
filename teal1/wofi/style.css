@@ -1,0 +1,56 @@
+window {
+    background-color: #000000;
+    border: 2px solid #000088;
+    font-family: "BlexMono Nerd Font";
+    font-size: 13px;
+}
+
+#outer-box {
+    padding: 8px;
+}
+
+#input {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #000088;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    min-height: 0;
+    padding: 2px 4px;
+    margin-bottom: 6px;
+}
+
+#input image {
+    opacity: 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#inner-box, #scroll {
+    background: transparent;
+}
+
+#entry {
+    padding: 3px 6px;
+    border: 1px solid transparent;
+}
+
+#text {
+    color: #ffffff;
+}
+
+#entry:selected {
+    background-color: #000088;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    outline: none;
+}
+
+#entry:selected #text {
+    color: #ffffff;
+    font-weight: normal;
+}

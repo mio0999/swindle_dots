@@ -1,0 +1,12 @@
+show=drun
+prompt=
+
+location=bottom_right
+width=270
+height=300
+xoffset=-120
+yoffset=3
+
+hide_scroll=true
+hide_search=false
+insensitive=true
